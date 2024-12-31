@@ -1,0 +1,45 @@
+GET http://localhost:3000/ventas HTTP/1.1
+
+###
+
+GET http://localhost:3000/ventas/16036770152687 HTTP/1.1
+
+###
+
+POST http://localhost:3000/ventas HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 1610776651111,
+    "Month": "01/01/2024",
+    "Sale ID": 1610776651111,
+    "Order name": "#9905",
+    "Product title at time of sale": "",
+    "Product variant SKU at time of sale": "",
+    "Sales channel": "Online Store",
+    "Order UTM campaign": "",
+    "Order UTM source": "",
+    "Order UTM medium": "",
+    "Gross sales": "0,00",
+    "Discounts": "0,00",
+    "Returns": "0,00",
+    "Net sales": "0,00",
+    "Shipping charges": "0,00",
+    "Return fees": "0,00",
+    "Taxes": "0,00",
+    "Total sales": "0,00",
+    "Net items sold": "0,00"
+  }
+
+###
+
+PUT http://localhost:3000/ventas/16036724375791 HTTP/1.1
+Content-Type: application/json
+
+{   
+    "Order name": "#4432"
+}
+
+### 
+DELETE http://localhost:3000/ventas/16107766511111 HTTP/1.1
+
